@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --font-monument: var(--font-monument);
+    --font-apple: var(--font-apple);
+}
+
+ /* * {
+    border: 1px solid red;
+ } */
+

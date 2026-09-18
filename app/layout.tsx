@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
+import localFont from 'next/font/local'
 import "./globals.css";
+
+const monument = localFont({
+    src: "./fonts/MonumentExtended-Regular.otf",
+    variable: "--font-monument"
+})
+
+const apple = localFont({
+    src: "./fonts/AppleGaramond.ttf",
+    variable: "--font-apple"
+})
 
 export const metadata: Metadata = {
   title: "Overwatch Heroes",
@@ -9,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <html>
-            <body>
+            <body className={`${monument.variable} ${apple.variable}`}>
                 {children}
             </body>
         </html>
