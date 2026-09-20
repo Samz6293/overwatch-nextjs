@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
+import Nav from "./components/Nav";
 
 const monument = localFont({
     src: "./fonts/MonumentExtended-Regular.otf",
@@ -19,10 +20,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
-        <html>
-            <body className={`${monument.variable} ${apple.variable}`}>
-                {children}
-            </body>
-        </html>
+        <>
+            <Nav />
+            <html>
+                <body className={`${monument.variable} ${apple.variable}`}>
+                    {children}
+                </body>
+            </html>
+        </>
     );
 }
