@@ -16,7 +16,9 @@ const Nav = () => {
 
                 <div className="justify-start hidden  
                 md:flex">
-                    <Image src="/overwatch-logo.png" alt="Overwatch Logo" width={757} height={122} className=" h-[40px]"/>
+                    <Link className="w-fit" href="/">
+                    <Image src="/overwatch-logo-transparent.png" alt="Overwatch Logo" width={757} height={122} className="h-6 w-auto"/>
+                    </Link>
                 </div>
 
                 <ul className="hidden text-white justify-center gap-9 font-apple text-lg
