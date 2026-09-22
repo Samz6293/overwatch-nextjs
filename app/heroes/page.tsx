@@ -1,8 +1,11 @@
+import AllHeroes from "./components/AllHeroes"
 
 const HeroesPage = () => {
-  return (
-    <div>HeroesPage</div>
-  )
+    return (
+        <>
+            <AllHeroes></AllHeroes>
+        </>
+    )
 }
 
 export default HeroesPage 
