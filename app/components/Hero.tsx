@@ -6,9 +6,7 @@ export default function Hero() {
             {/* Mobile readability scrim: active on small screens, transparent on desktop */}
             <div className="h-full w-full bg-linear-to-t from-black/95 via-black/80 to-transparent
             md:bg-none">
-                <div className="content-box h-full flex flex-col justify-center gap-3 px-6
-                sm:gap-6 sm:px-12
-                md:px-16">
+                <div className="content-box h-full flex flex-col justify-center gap-3">
                     <h1 className="text-2xl text-start tracking-tight leading-7 font-monument
                     sm:text-4xl sm:leading-10
                     md:text-5xl md:leading-11">

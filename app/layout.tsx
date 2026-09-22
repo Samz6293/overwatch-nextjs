@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
     return (
         <>
-            <Nav />
             <html>
-                <body className={`${monument.variable} ${apple.variable}`}>
+                <body className={`${monument.variable} ${apple.variable} text-white`}>
+                    <Nav />
                     {children}
                 </body>
             </html>
