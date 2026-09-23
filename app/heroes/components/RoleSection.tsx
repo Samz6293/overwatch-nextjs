@@ -10,7 +10,7 @@ const RoleSection = ({ title, heroes }: RoleSectionProps) => {
                     <div className="h-px flex-1 bg-orange-500/30" />
                     <span className="text-sm font-medium text-zinc-500">{heroes.length}</span>
                 </div>
-                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 ">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5 md:grid-cols-4 ">
                     {heroes.map((hero: Hero) => (
                         <HeroCard key={hero.key} hero={hero} />
                     ))}
