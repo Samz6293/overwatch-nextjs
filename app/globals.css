@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
     --font-monument: var(--font-monument);
@@ -8,6 +9,7 @@
 @utility content-box {
     width: 95%;
     margin: 0 auto;
+    padding: 0px 20px;
     max-width: 1600px;
 }
 
@@ -20,7 +22,5 @@ body {
     background-color: black;
 }
 
- /* * {
-    border: 1px solid red;
- } */
+ /* * {border: 1px solid red;} */
 

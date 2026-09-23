@@ -6,3 +6,12 @@ export interface Hero {
     subrole: string
     gamemodes: string[]
 }
+
+export interface HeroCardProps {
+    hero: Hero
+}
+
+export interface RoleSectionProps {
+    title: string
+    heroes: Hero[]
+}

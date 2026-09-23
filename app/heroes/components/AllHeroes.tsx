@@ -1,4 +1,5 @@
 import { Hero } from "@/app/types";
+import RoleSection from "./RoleSection";
 
 async function getAllHeroes() {
     const response = await fetch("https://overfast-api.tekrop.fr/heroes");
@@ -6,28 +7,18 @@ async function getAllHeroes() {
     return data
 }
 
-const AllHeroes = async() => {
+const AllHeroes = async () => {
     const heroesList: Hero[] = await getAllHeroes();
-    const tanks:Hero[] = heroesList.filter(hero=> hero.role === "tank")
-    const dps:Hero[] = heroesList.filter(hero=> hero.role === "damage")
-    const supports:Hero[] = heroesList.filter(hero=> hero.role === "support")
+    const tanks: Hero[] = heroesList.filter(hero => hero.role === "tank")
+    const dps: Hero[] = heroesList.filter(hero => hero.role === "damage")
+    const supports: Hero[] = heroesList.filter(hero => hero.role === "support")
+
     return (
-        <>
-            <h1 className="text-5xl text-orange-500">Tanks</h1>
-            {tanks.map((hero: Hero) => (
-                <p key={hero.key}>{hero.name}</p>
-            ))}
-
-            <h1 className="text-5xl text-orange-500">DPS</h1>
-            {dps.map((hero: Hero) => (
-                <p key={hero.key}>{hero.name}</p>
-            ))}
-
-            <h1 className="text-5xl text-orange-500">Supports</h1>
-            {supports.map((hero: Hero) => (
-                <p key={hero.key}>{hero.name}</p>
-            ))}
-        </>
+        <div className="content-box mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-14 lg:px-8">
+            <RoleSection title="Tank" heroes={tanks} />
+            <RoleSection title="Damage" heroes={dps} />
+            <RoleSection title="Support" heroes={supports} />
+        </div>
     )
 }
 
