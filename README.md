@@ -71,7 +71,7 @@ Follow these steps to run the project locally on your machine:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/](https://github.com/)<your-username>/overwatch-nextjs.git
+git clone https://github.com/Samz6293/overwatch-nextjs
 cd overwatch-nextjs
 npm install
 npm run dev
