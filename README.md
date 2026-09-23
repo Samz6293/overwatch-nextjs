@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Overwatch Heroes Directory 🎮
 
-## Getting Started
+[![Live Demo](https://img.shields.io/badge/Live_Demo-overwatch--nextjs.vercel.app-blue?style=for-the-badge&logo=vercel)](https://overwatch-nextjs.vercel.app/)
 
-First, run the development server:
+> ⚠️ **Work in Progress (WIP)**: This project is currently in early active development as a Next.js practice project.
 
+---
+
+## 🔗 Live Links
+
+- **Live Deployment**: [https://overwatch-nextjs.vercel.app/](https://overwatch-nextjs.vercel.app/)
+- **Data Source**: [OverFast API](https://overfast-api.tekrop.fr/)
+
+---
+
+## 📖 Project Overview
+
+**Overwatch Heroes Directory** is a web application built with Next.js designed to help newer Overwatch players learn and explore the game's diverse roster of heroes. The goal is to provide a beginner-friendly platform where players can understand hero roles, browse character archetypes, and dive deep into individual hero mechanics and lore.
+
+---
+
+## 📸 Preview
+
+![Overwatch Heroes Directory Preview](./app/assets/hero-overwatch-nextjs.png)
+
+---
+
+## ✨ Features
+
+- [x] **Live API Integration**: Dynamic hero data fetching via the OverFast API.
+- [x] **Role-Based Filtering**: Heroes are segregated by core in-game roles:
+  - 🛡️ **Tank**
+  - ⚔️ **Damage (DPS)**
+  - 💉 **Support**
+- [ ] **Hero Detail View** *(In Progress)*: Clickable hero cards leading to detailed breakdowns of hero stats, abilities, playstyles, and lore.
+- [ ] **Dynamic Search**: Real-time filtering by hero name and archetypes.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, React Server Components)
+- **Library**: [React 19](https://react.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Hosting**: [Vercel](https://vercel.com/)
+
+---
+
+## 📦 Dependencies
+
+### Core Dependencies
+- `next`: `16.3.5`
+- `react`: `19.2.8`
+- `react-dom`: `19.2.8`
+- `react-icons`: `^5.7.0`
+
+### Dev Dependencies
+- `tailwindcss`: `^4`
+- `@tailwindcss/postcss`: `^4`
+- `typescript`: `^5`
+- `eslint`: `^9`
+- `eslint-config-next`: `16.3.5`
+
+---
+
+## 💻 Getting Started (Local Setup)
+
+Follow these steps to run the project locally on your machine:
+
+### 1. Clone the repository
 ```bash
+git clone [https://github.com/](https://github.com/)<your-username>/overwatch-nextjs.git
+cd overwatch-nextjs
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
